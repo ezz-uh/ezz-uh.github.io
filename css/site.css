@@ -1,6 +1,8 @@
 ﻿body {
     font-family: "Segoe UI";
     background-color: #041e42;
+    -moz-transform: scale(1.25); /* for Firefox, default 1*/
+    zoom: 125%; /* For Chrome, IE, default 100%*/
 }
 
 .container {
