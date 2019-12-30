@@ -1,8 +1,8 @@
 ﻿body {
     font-family: "Segoe UI";
     background-color: #041e42;
-    -moz-transform: scale(1.25); /* for Firefox, default 1*/
-    zoom: 125%; /* For Chrome, IE, default 100%*/
+    -moz-transform: scale(1.25);
+    zoom: 125%;
 }
 
 .container {
@@ -110,6 +110,7 @@ h3 {
     grid-column: 2/3;
     border-left: 1px solid grey;
     padding-left: 15px;
+    display: block;
 }
 
     #right h5 {
@@ -154,7 +155,37 @@ footer {
     text-align: center;
 }
 
+@media (max-width: 1200px) {
+    body {
+        -moz-transform: scale(1); /* for Firefox, default 1*/
+        zoom: 100%; /* For Chrome, IE, default 100%*/
+    }
+}
+
+#additionals {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 45px;
+}
+
+ul {
+    padding-left: 10px
+}
+
+#interests {
+    grid-column: 1/2;
+}
+
+#education {
+    grid-column: 2/2;
+}
+
 @media (max-width: 650px) {
+
+    #additionals {
+        display: block;
+    }
+
     .container {
         padding: 20px;
     }
@@ -236,7 +267,6 @@ footer {
         border-left: 0;
         border-top: 1px solid grey;
         display: grid;
-        grid-template-columns: 60% 40%;
     }
 }
 
